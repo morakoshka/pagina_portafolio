@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- added vaporwave font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc95ca9248.js" crossorigin="anonymous"></script>
     <title>Portafolio</title>
 </head>
 <body>
@@ -41,6 +42,30 @@
     </nav>
 
     <div id="main_body">
+        <div class="slider-panel panel" id="hero-slider">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img/art1.jpg" alt="Art 1">
+                        <div class="slide-caption"><strong>Neon City</strong> — limited prints available</div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/art2.jpg" alt="Art 2">
+                        <div class="slide-caption"><strong>Synthwave Shore</strong> — oil + digital mixed</div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/art3.jpg" alt="Art 3">
+                        <div class="slide-caption"><strong>Dark Fantasy</strong> — preview sketch</div>
+                    </div>
+                </div>
+
+                <button class="slider-prev" aria-label="Previous">‹</button>
+                <button class="slider-next" aria-label="Next">›</button>
+
+                <div class="slider-dots" aria-hidden="false"></div>
+            </div>
+        </div>
+
         <div class="column">
             <div class="panel">
                 <h2>Noticeboard</h2>
@@ -48,11 +73,16 @@
             </div>
             <div class="panel">
                 <h2>Upcoming</h2>
-                <p>Virtual show: "Vaporwave Nights" — Dec 3. RSVP and gallery preview coming soon.</p>
+                <p>While working on commissions I'm also developing a Dark Fantasy comic concept, it's been on the burner for a while, I hope I'll be able to make something out of it soon!</p>
             </div>
             <div class="panel">
                 <h2>Quick Links</h2>
-                <p>Portfolio · Shop · Contact — bookmarks for easy navigation.</p>
+                <p>
+                    <a class="btn small" href="#"><i class="fa-brands fa-square-bluesky"></i> Bluesky</a>
+                    <a class="btn small ghost" href="#"><i class="fa-brands fa-shopify"></i> Shop</a>
+                    <a class="btn small" href="#"><i class="fa-solid fa-user"></i> Contact</a>
+                    <a class="btn small ghost" href="#"><i class="fa-solid fa-bookmark"></i> Bookmarks</a>
+                </p>
             </div>
         </div>
         <div class="column">
@@ -86,5 +116,7 @@
     </div>
 
     <footer>footer</footer>
+
+    <script src="slider.js" defer></script>
 </body>
 </html>
